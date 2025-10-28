@@ -141,6 +141,7 @@
   This project is for <b>educational and portfolio purposes</b> only.<br>
   All game concepts are original; inspiration credits to <i>Valorant (Riot Games)</i> and <i>Apex Legends (Respawn Entertainment)</i>.
   <p style="color: red">There is real world map which is near japan and named as hashima island used for battle royal</p>
+  <a href="LICENSE">MIT license</a>
 </p>
 
 <hr>
