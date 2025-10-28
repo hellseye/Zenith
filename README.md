@@ -54,7 +54,7 @@
   </tr>
   <tr>
     <td>Deployment</td>
-    <td>GitHub Pages / Vercel</td>
+    <td>GitHub Pages</td>
   </tr>
 </table>
 
