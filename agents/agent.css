@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-  
 }
 
 body {
@@ -25,7 +24,6 @@ body {
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.18);
-  /* padding: 10px 20px; */
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   z-index: 1000;
   transition: 0.3s ease;
@@ -84,7 +82,8 @@ body {
   border-radius: 10px;
   margin-right: 15px;
   cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
+  /* transition: transform 0.2s ease, background 0.2s ease; */
+  transition: transform 0.2s ease ;
 }
 
 .nav-page button:hover {
@@ -94,8 +93,8 @@ body {
 .nav-page button:hover a {
   color: rgb(247, 20, 35);
 }
-/* == AGENT SECTION == */
 
+/* == AGENT SECTION == */
 .agent-header {
     display: flex;
     justify-content: center;
@@ -225,10 +224,6 @@ body {
   color: #eee;
 }
 
-
-/* ===========================
-   MOBILE
-=========================== */
 @media (max-width: 1145px) {
   .agent {
     flex-direction: column !important;
@@ -257,7 +252,6 @@ body {
   animation: glitch-scan 2.5s infinite linear;
 }
 
-/* Red offset */
 .glitch-text::before,
 .glitch-text::after {
   content: attr(data-text);
@@ -269,21 +263,18 @@ body {
   opacity: 0.8;
 }
 
-/* Cyan glitch */
 .glitch-text::before {
   color: #00faff;
   animation: glitch-layer-1 2.5s infinite linear;
   z-index: -1;
 }
 
-/* Magenta glitch */
 .glitch-text::after {
   color: #ff00c8;
   animation: glitch-layer-2 2.5s infinite linear;
   z-index: -1;
 }
 
-/* Main scan effect */
 @keyframes glitch-scan {
   0% { text-shadow: 0 0 0px #ff3b58; }
   15% { text-shadow: 0 0 8px #ff3b58; }
