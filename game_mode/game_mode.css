@@ -34,6 +34,7 @@ body {
   backdrop-filter: blur(25px);
   border-color: rgba(255, 255, 255, 0.3);
 }
+
 .nav-elements{
   display: flex;
   align-items: center;
@@ -67,12 +68,6 @@ body {
 .nav-page li a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
-  width: 100px;
-  height: 33px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease, background 0.2s ease;
 }
 
 .nav-page button a{
@@ -94,28 +89,31 @@ body {
 
 .nav-page button:hover {
   transform: scale(1.05);
-  border: 1px solid rgb(247, 20, 35);
-  background-color: rgba(10, 10, 10, 0.8); 
 }
 
 .nav-page button:hover a {
   color: rgb(247, 20, 35);
-  
 }
-/* ==  content  == */
-.maps-header {
+/* == content ==  */
+.header {
     display: flex;
     justify-content: space-between;
     padding: 70px 6%;
     text-align: left;
 }
-.maps-header h1 {
+.header h1 {
     font-size: 7rem;
     color: white;
     letter-spacing: 3px;
     font-weight: 800;
 }
-.maps-heading {
+/* .subtext {
+    max-width: 550px;
+    margin-top: 15px;
+    color: #aaaaaa;
+    line-height: 1.5;
+} */
+.heading {
     font-size: 5rem;
     font-weight: 800;
     background: linear-gradient(90deg, #ffffff 0%, #d3d3d3 35%, #8a8a8a 100%);
@@ -125,7 +123,7 @@ body {
     letter-spacing: 3px;
 }
 
-.maps-divider {
+.divider {
     width: 100%;
     height: 2px;
     background: linear-gradient(
@@ -136,112 +134,40 @@ body {
     );
     margin: 25px 0 40px 0;
 }
-body{
-  background:#0d0d0f;
-  font-family:"Poppins", sans-serif;
-  margin:0;
-  padding:0;
-  color:white;
-}
-
-/* Heading */
-.map-title{
-  text-align:center;
-  margin-top:60px;
-  font-size:3rem;
-  background:linear-gradient(90deg,#ff006a,#6f00ff);
-  -webkit-background-clip:text;
-  color:transparent;
-  font-weight:700;
-}
-
-/* horizontal line */
-.line{
-  width:140px;
-  height:4px;
-  background:linear-gradient(90deg,#ff006a,#6f00ff);
-  margin:10px auto 40px;
-  border-radius:10px;
-}
-
-/* map grid */
-.map-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-  gap:30px;
+.modes-grid{
   width:85%;
   margin:0 auto 60px;
 }
-
-/* cards */
-.map-card{
+.mode-card {
   background:rgba(255,255,255,0.06);
   backdrop-filter:blur(8px);
   padding:15px;
+  margin: 20px;
   border-radius:20px;
   overflow:hidden;
   transition:0.3s;
   border:1px solid rgba(255,255,255,0.1);
 }
-.map-card:hover{
-  transform:translateY(-8px);
+.game-mode{
+    display: flex;
+    justify-content: space-around;
+    padding:15px;
+    margin: 20px;
 }
-#aether-spire:hover{
-    border: 1px solid #0cc1d2;
-}
-#fracture-base:hover{
-    border: 1px solid #7cd8d3;
-}
-#obsidian-waste:hover{
-    border: 1px solid #f9bc22;
-}
-#hashima-island:hover{
-    border: 1px solid #6d706e;
-}
-/* images */
-.map-card img{
-  width:100%;
-  height:200px;
+.game-mode img{
+  width:50%;
   object-fit:cover;
   border-radius:15px;
   transition:0.3s;
 }
-.map-card:hover img{
-  transform:scale(1.05);
-}
 
-/* title */
-.map-card h3{
-  margin:15px 0 5px;
-  font-size:1.4rem;
+.game-mode p{
+    margin: 10px;
 }
-
-/* description */
-.map-card p{
-  opacity:0.7;
-  font-size:0.95rem;
-}
-
-/* button */
-.view-btn{
-  margin-top:15px;
-  display:inline-block;
-  padding:8px 16px;
-  border-radius:12px;
-  background:#ff006a;
-  text-decoration:none;
-  color:white;
-  font-size:0.9rem;
-  transition:0.3s;
-}
-.view-btn:hover{
-  background:#d20059;
-}
-/* footer */
+/* == footer == */
 .footer-banner-img {
   width: 100%;
   height: 280px; 
-  margin-top: 100px;
   position: relative;
   overflow: hidden;
 }
